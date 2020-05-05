@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<script>
+			var cookiecount = 0;
+		</script>
+		<title>0 Cookies</title>
+		<link rel="icon" href="https://ya-webdesign.com/transparent250_/cookie-cartoon-png-1.png">
+		<style>
+			div{
+				text-align: center;
+			}
+			.modem{
+				cursor: pointer;
+			}
+			.momo{
+				border: 0px;
+				padding: 25px 45px;
+				color: white;
+				background-color: green;
+				border-radius: 1px;
+				cursor: pointer;
+			}
+			body:hovor{
+				cursor: url("https://toppng.com/uploads/preview/error-glitch-cursor-mouse-mousecursor-windows7-dark-cursor-pixel-11562888282lcsqvr1ice.png", default);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="modem">
+		<a href=# onclick="add()"><img src="https://cdn.clipart.email/ce12c5177e3ba4001ad7fba7d237f949_cream-oreo-biscuits-dunking-clip-art-oreo-cliparts-png-download-_900-900.jpeg" height="300" width="300"></a>
+		</div>
+		<br>
+		<br>
+		<div>
+		You Got:
+		<input type="text" id="text" disabled style="text-align: center;">Cookies.
+		</div>
+		<script>
+			function add(){
+				cookiecount = cookiecount +1;
+				document.getElementById('text').value = cookiecount;
+				document.title = cookiecount + "Cookies";
+				var audio = new Audio('Mouse-Click-00-m-FesliyanStudios.com.mp3');
+				audio.play();
+			}
+		</script>
+		<br><br>
+		<div>
+		<a href="#" onclick="save()"><button class="momo">Save</button></a>
+		<a href="#" onclick="load()"><button class="momo">Load</button></a>
+		</div>
+		<script>
+			function save(){
+				localStorage.setItem("cookiecount", cookiecount);
+			}
+			function load(){
+				cookiecount = localStorage.getItem("cookiecount");
+				cookiecount = parseInt(cookiecount);
+				document.getElementById('text').value = cookiecount;
+				document.title = cookiecount + "Cookies";
+			}
+		</script>
+		<p id="yet"></p>
+	</body>
+</html>
